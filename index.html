@@ -9,7 +9,7 @@
   <!-- TODO: Replace with your paper title and author names -->
   <meta name="title" content="From Words to Safety: Language-Conditioned Safety Filtering for Robot Navigation">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta name="description" content="A Modular Framework for Language-Condition Safe Navigation">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
   <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
   <!-- TODO: List all authors -->
@@ -20,11 +20,11 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <meta property="og:site_name" content="IROS 2026 Submission">
   <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
+  <meta property="og:title" content="From Words to Safety: Language-Conditioned Safety Filtering for Robot Navigation">
   <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta property="og:description" content="A Modular Framework for Language-Condition Safe Navigation">
   <!-- TODO: Replace with your actual website URL -->
   <meta property="og:url" content="https://annnymUser.github.io/Word2SafetyWebsite/">
   <!-- TODO: Create a 1200x630px preview image and update path -->
@@ -288,12 +288,21 @@
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/annnymUser/Word2Safety" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
+                  </a>
+
+                  <span class="link-block">
+                    <a href="https://github.com/annnymUser/Predictive_Filter_Stress_Test" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Filter-Stress-Test Code</span>
                   </a>
                 </span>
 
@@ -363,21 +372,6 @@ We evaluate the effectiveness of the proposed framework through both simulation 
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/1.png" alt="First research result visualization" loading="lazy" style="height:300px; width:auto; display:block; margin-left:auto; margin-right:auto;" />
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered" style="font-size:26px;">
-          <b>Fig. 1:</b> Framework Overview. Language instructions are parsed by an LLM into safety configurations, grounded via the perception module, and enforced by a sampling-based safety filter. 
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/2.png" alt="Second research result visualization" loading="lazy" style="height:350px; width:auto; display:block; margin-left:auto; margin-right:auto;" />
-        <h2 class="subtitle has-text-centered" style="font-size:26px;">
-          <b>Fig. 2:</b> Our proposed language-conditioned filter safeguards the robot against semantic constraint violations while completing navigation tasks. Red dotted lines indicate nominal (shortest) paths, and green lines denote filtered trajectories.
-        </h2>
-      </div>
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/3.png" alt="Third research result visualization" loading="lazy" style="height:350px; width:auto; display:block; margin-left:auto; margin-right:auto;" />
@@ -392,6 +386,13 @@ We evaluate the effectiveness of the proposed framework through both simulation 
         <b>Fig. 4:</b> An example of human-LLM interaction for parsing ambiguous instructions and reject unrealistic instructions.
       </h2>
     </div>
+    <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/2.png" alt="Second research result visualization" loading="lazy" style="height:350px; width:auto; display:block; margin-left:auto; margin-right:auto;" />
+        <h2 class="subtitle has-text-centered" style="font-size:26px;">
+          <b>Fig. 2:</b> Our proposed language-conditioned filter safeguards the robot against semantic constraint violations while completing navigation tasks. Red dotted lines indicate nominal (shortest) paths, and green lines denote filtered trajectories.
+        </h2>
+      </div>
     <div class="item">
       <!-- Your image here -->
       <img src="static/images/5.png" alt="Fifth research result visualization" loading="lazy" style="height:350px; width:auto; display:block; margin-left:auto; margin-right:auto;" />
@@ -413,7 +414,7 @@ We evaluate the effectiveness of the proposed framework through both simulation 
       <h2 class="title is-3 has-text-centered">Method Overview</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <img src="static/images/3.png" alt="Fifth research result visualization" loading="lazy" style="height:350px; width:auto; display:block; margin-left:auto; margin-right:auto;" />
+          <img src="static/images/1.png" alt="Fifth research result visualization" loading="lazy" style="height:350px; width:auto; display:block; margin-left:auto; margin-right:auto;" />
           <h2 class="subtitle has-text-centered" style="font-size:20px;">
             <br>Our work presents a modular language-conditioned safety framework for robot navigation, comprising three core modules: an LLM-based parser that converts free-form language instructions into structured safety specs, a perception module grounding specs to 3D object-level environmental representations, and an MPC-based sampling safety filter enforcing real-time semantic and geometric constraints while minimally deviating from nominal control.
           </h2>
